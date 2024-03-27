@@ -2,3 +2,8 @@ from distutils.core import setup
 from setuputils import find_packages
 
 
+setup(
+    name="python_tdd",
+    version="0.0.1",
+    description="A simple fullstack app with flask"
+)
