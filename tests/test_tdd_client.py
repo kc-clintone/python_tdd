@@ -1,5 +1,5 @@
 import unittest
-from client import NamedEntityClient
+from ..client import NamedEntityClient
 
 class TestTddClient(unittest.TestCase):
 
