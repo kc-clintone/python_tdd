@@ -1,5 +1,5 @@
 from distutils.core import setup
-from setuputils import find_packages
+from setuptools import find_packages
 
 
 setup(
