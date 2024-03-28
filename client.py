@@ -5,4 +5,4 @@ class NamedEntityClient():
         self.model = model
 
     def get_entity(self, sentence):
-        return {}
+        return {'ents': [], 'html': ''}
