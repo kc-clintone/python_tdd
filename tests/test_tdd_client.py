@@ -1,9 +1,9 @@
 import unittest
-from client.py import NamedEntityClient
+from client import NamedEntityClient
 
-class TestTddClient(unittest.TestCase):
+class TestClient(unittest.TestCase):
 
     def test_if_get_entity_returns_dict_given_string(self):
-        ne = NamedEntityClient()
-        entity = ne.get_entity("")
+        nec = NamedEntityClient()
+        entity = nec.get_entity("")
         self.assertIsInstance(entity, dict)
