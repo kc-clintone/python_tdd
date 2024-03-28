@@ -28,12 +28,12 @@ class TestClient(unittest.TestCase):
         self.assertListEqual(ents['ents'], results['ents'])
 
     def test_get_ents_given_spacy_NORP_is_returned(self):
-      │ model = NecModelTestDouble("eng")
-      │ doc_ents = [{'text':'Kenyan', 'label_':'NORP'}]
-      │ model.returns_doc_ents(doc_ents)
-      │ nec = NamedEntityClient(model)
-      │ entity = nec.get_entity("...")
-      │ results = {'ents': ['ent':'Kenyan', 'label':'Group'], html: "
+        model = NecModelTestDouble("eng")
+        doc_ents = [{'text':'Kenyan', 'label_':'NORP'}]
+        model.returns_doc_ents(doc_ents)
+        nec = NamedEntityClient(model)
+        entity = nec.get_entity("...")
+        results = {'ents': ['ent':'Kenyan', 'label':'Group'], html: "
         self.assertListEqual(ents['ents'], results['ents'])
 
     def test_get_ents_given_spacy_LOC_is_returned(self):
