@@ -1,6 +1,6 @@
 import unittest
 from client import NamedEntityClient
-from test_doubles import NecModelTestDouble
+from tests.test_doubles import NecModelTestDouble
 
 class TestClient(unittest.TestCase):
 
