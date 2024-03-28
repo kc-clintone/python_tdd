@@ -24,7 +24,7 @@ class TestClient(unittest.TestCase):
         model.returns_doc_ents(doc_ents)
         nec = NamedEntityClient(model)
         entity = nec.get_entity("...")
-        results = {'ents': ['ent':'Beyonce', 'label':'person'], html: ''}
+        results = {'ents': [{'ent':'Beyonce', 'label':'person'}], html: ''}
         self.assertListEqual(ents['ents'], results['ents'])
 
     def test_get_ents_given_spacy_NORP_is_returned(self):
@@ -33,7 +33,7 @@ class TestClient(unittest.TestCase):
         model.returns_doc_ents(doc_ents)
         nec = NamedEntityClient(model)
         entity = nec.get_entity("...")
-        results = {'ents': ['ent':'Kenyan', 'label':'Group'], html: ''}
+        results = {'ents': [{'ent':'Kenyan', 'label':'Group'}], html: ''}
         self.assertListEqual(ents['ents'], results['ents'])
 
     def test_get_ents_given_spacy_LOC_is_returned(self):
@@ -42,7 +42,7 @@ class TestClient(unittest.TestCase):
         model.returns_doc_ents(doc_ents)
         nec = NamedEntityClient(model)
         entity = nec.get_entity("...")
-        results = {'ents': ['ent':'At the beach', 'label':'Location'], html: ''}
+        results = {'ents': [{'ent':'At the beach', 'label':'Location'}], html: ''}
         self.assertListEqual(ents['ents'], results['ents'])
 
     def test_get_ents_given_spacy_LANGUAGE_is_returned(self):
@@ -51,7 +51,7 @@ class TestClient(unittest.TestCase):
         model.returns_doc_ents(doc_ents)
         nec = NamedEntityClient(model)
         entity = nec.get_entity("...")
-        results = {'ents': ['ent':'ASL', 'label':'Language'], html: ''}
+        results = {'ents': [{'ent':'ASL', 'label':'Language'}], html: ''}
         self.assertListEqual(ents['ents'], results['ents'])
 
     def test_get_ents_given_spacy_GPE_is_returned(self):
@@ -60,7 +60,7 @@ class TestClient(unittest.TestCase):
         model.returns_doc_ents(doc_ents)
         nec = NamedEntityClient(model)
         entity = nec.get_entity("...")
-        results = {'ents': ['ent':'Nairobi', 'label':'Location'], html: ''}
+        results = {'ents': [{'ent':'Nairobi', 'label':'Location'}], html: ''}
         self.assertListEqual(ents['ents'], results['ents'])
 
     def test_get_ents_given_spacy_all_is_returned(self):
