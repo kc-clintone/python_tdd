@@ -1,10 +1,12 @@
 import unittest
 from client import NamedEntityClient
+from test_doubles import NecModelTestDouble
 
 class TestClient(unittest.TestCase):
 
-    def test_if_get_entity_returns_dict_given_string(self):
-        model = NecModelTestable("eng")
+    def test_if_get_entity_returns_dict_given_empty_string_returns_empty_spacy(self):
+        model = NecModelTestDouble("eng")
+        model = returns_doc_ents[()]
         nec = NamedEntityClient(model)
         entity = nec.get_entity("")
         self.assertIsInstance(entity, dict)

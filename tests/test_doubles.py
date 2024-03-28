@@ -1,4 +1,4 @@
-class NecModelTestables:
+class NecModelDoubles:
     """
     Test clss for Ner models
     """
