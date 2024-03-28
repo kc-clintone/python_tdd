@@ -18,4 +18,4 @@ class NamedEntityClient():
             'LANGUAGE': 'Language',
             'LOC': 'Location'
         }
-    return this_name.get(label)
+        return this_name.get(label)
